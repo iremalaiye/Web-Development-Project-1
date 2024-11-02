@@ -1,0 +1,281 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+     background: linear-gradient(to right, #ff7e5f, #feb47b) ;
+}
+
+
+
+/* Header */
+.header {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     background: #ef7052;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: black;
+}
+
+.header .logo i {
+    margin-right: 5px;
+}
+
+.header .tagline {
+    font-size: 14px;
+    color:#150d09;
+}
+
+/* Left Sidebar */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-right: 2px solid #ccc;
+    width: 20%;
+	min-width: 200px; 
+}
+
+.sidebar .icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    text-align: center;	
+	width:60%;
+}
+
+.main-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.main-content p {
+    font-size: 14px;
+    color: #030815;
+    margin-bottom: 20px;
+	
+}
+.scrollable-content {
+            max-height: 600px; 
+            overflow-y: auto; 
+            padding: 10px; 
+            border: 1px solid #ddd; 
+            border-radius: 5px; 
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            margin-top: 10px; 
+			
+        }
+
+
+/* Profile Informations Section */
+
+.profile-section{
+border-left: 2px solid #ccc;
+padding: 20px;
+ width: 20%; 
+ min-width: 200px;
+ 
+ 
+}
+
+.profile-section .profile {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+	
+	
+}
+
+.profile-section .profile .fa-regular.fa-user {
+    font-size: 48px;
+    margin-right: 10px;
+    color: #eb3434;
+}
+
+.profile-section .profile .information {
+    display: flex;
+    flex-direction: column;
+	 flex-grow: 1;
+	flex-shrink: 1; 
+   min-width: 0;
+   overflow: hidden; 
+    text-overflow: ellipsis; 
+    overflow-wrap: break-word; 
+    word-break: break-word; 
+    
+}
+
+
+
+.profile-section .profile .information a {
+    word-break: break-word; 
+	overflow-wrap: break-word;
+    
+}
+
+
+.profile-section .profile-balance {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    overflow-wrap: break-word; 
+    word-break: break-word; 
+    
+}
+
+.profile-section .profile-balance .wallet-icon {
+    font-size: 48px;
+    margin-right: 10px;
+	color: #eb3434;
+}
+
+
+.profile-section .previous-transactions {
+    padding: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    background-color: #f9f9f9; 
+    margin-top: 20px; 
+    color:#eb3434
+}
+
+.profile-section .previous-transactions ul li {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin-bottom: 10px; 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+    color:#030815
+} 
+
+.profile-section .card-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+     width: 100%; 
+    margin-top: 10px;
+}
+
+.profile-section .card-container .credit-card, .bank-card {
+    width: 100%; 
+    max-width: 250px; 
+    padding: 15px; 
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    color: #fff;
+  margin-bottom: 10px; 
+}
+
+
+.profile-section .card-container .credit-card {
+    background: linear-gradient( to top,#206fea, #13eec0);
+}
+
+.profile-section .card-container .bank-card {
+    background: linear-gradient(to top, #206fea, #c170f1);
+}
+
+.card-info {
+    font-size: 12px; 
+    line-height: 1.4; 
+}
+
+.card-info strong {
+    font-size: 16px; 
+    display: block;
+    margin-bottom: 8px; 
+}
+
+.card-info p {
+    margin: 3px 0; 
+}
+
+@media (max-width: 768px) {
+    
+    .sidebar, .profile-section {
+        width: 100%; 
+        border: none; 
+    }
+
+    .main-content {
+        width: 100%; 
+		
+    }
+
+    .header {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+	
+}
+
+@media (max-width: 480px) {
+    .header .logo {
+        font-size: 20px; 
+    }
+
+    .header .tagline {
+        font-size: 12px; 
+    }
+
+    .icon-box {
+        flex-direction: column; 
+    }
+	.credit-card, .bank-card {
+        width: 90%; 
+    }
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    background-color: #f9f9f9;
+    margin-top: 20px auto;
+
+}
+
+.footer a {
+    margin: 0 10px;
+    color: #ec5e17;
+    text-decoration: none;
+}
+
+.footer a.disabled {
+    color: #ccc;
+    pointer-events: none;
+}  
