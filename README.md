@@ -5,6 +5,6 @@
 - Surname : Alaiye
 - StudentID: 210709077
 
-## Offical Gİthub Link
+## Offical Github Link
 
 [Github](https://github.com/iremalaiye/Web-Development-Project-1.git)
