@@ -7,4 +7,4 @@
 
 ## Offical Gİthub Link
 
-[Github](https://github.com/iremalaiye/Web-Development-Project-1/tree/master)
+[Github](https://github.com/iremalaiye/Web-Development-Project-1.git)
